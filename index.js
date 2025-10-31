@@ -23,10 +23,7 @@ const bookRoutes = require('./routes/book.routes');
 app.use('/api/authors', authorRoutes);
 app.use('/api/books', bookRoutes);
 
-// Home route
-app.get('/', (req, res) => {
-  res.sendFile(resolve(__dirname, 'pages/index.html'));
-});
+
 
 // Start server
 app.listen(port, () => {
